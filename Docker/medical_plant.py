@@ -7,7 +7,7 @@ import os
 app = Flask(__name__)
 
 # Load the Keras model
-model = tf.keras.models.load_model(r'D:\MedicalPlant\VGG16_version_2.keras')
+model = tf.keras.models.load_model(r'D:\MedicalPlant\Docker\VGG16_version_2.keras')
 
 # Define the class labels for prediction
 class_labels = [
@@ -61,4 +61,4 @@ def predict_image():
     return render_template('index.html', prediction=classification, image_file=imagefile.filename)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000,debug=True)

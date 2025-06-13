@@ -118,6 +118,16 @@ After running the script, open your browser and go to:
 http://127.0.0.1:5000/
 ```
 
+## 🐳 Using Docker
+If you prefer Docker, you can pull and run the container directly:
+```
+docker pull sadabali/medical-plant
+docker run -p 5000:5000 sadabali/medical-plant
+```
+Then visit:
+```
+http://localhost:5000/
+```
 ## Acknowledgements
 Presented at 1st International Conference on Machine Intelligence and Data Science (Springer), CUTM Bhubaneswar.
 
